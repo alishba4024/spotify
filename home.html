@@ -1,0 +1,221 @@
+<!-- 80 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/images/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css">
+</head>
+
+<body>
+    
+    <div class="sidebar">
+        <div class="logo">
+            <a href="https://open.spotify.com/">
+                <img src="/images/Spotify_Logo_RGB_White.png" alt="logo">
+                </a>
+           
+        </div>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="/Spotify.html">
+                    <span class="fa fa-home"></span>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/search.html">
+                    <span class="fa fa-search"></span>
+                    <span> Search</span>
+                </a>
+            </li>
+<div class="separator"></div>
+            <li>
+                <a href="">
+                    <span class="fa fas fa-book"></span>
+                    <span>Your Library</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="fa fa-list"></span>
+                    <span>Create Playlist</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span class="fa fa-thumbs-up "></span>
+                    <span>Liked Songs</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="policies">
+        <ul>
+            <li>
+                <a href="">Cookies</a>
+            </li>
+            <li>
+                <a href="">Privacy</a>
+            </li>
+            <li>
+                <a href="">About US</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-button">
+                <a href="/search.html"><button type="button" class="fa fas fa-chevron-left"></button></a>
+                <a href="/showall.html"><button type="button" class="fa fas fa-chevron-right"></button></a>
+            </div>
+
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="">Sign up</a>
+                </li>
+            </ul>
+            <button type="button">login </button>
+        </div>
+
+        </div>
+
+        <div class="spotify-playlist">
+            <h1>Spotify Playlists</h1>
+
+            <div class="showall-button">
+                <a href="/showall.html">Show All</a>
+             </div>
+
+            <div class="list">
+                <!-- Playlist items will be dynamically generated here -->
+            </div>
+            
+        </div>
+
+        <!-- <div class="showall-button">
+           <a href="/showall.html"> <button type="button" class="B-showall">Show All</button></a>
+        </div> -->
+        
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="main-footer">
+            <div class="footer">
+                <h3 class="footer-title">Company</h3>
+               <a href="https://www.spotify.com/sg-en/about-us/contact/"><h3 class="text">About</h3></a> 
+               <a href="https://www.lifeatspotify.com"><h3 class="text">Jobs</h3></a> 
+               <a href="https://newsroom.spotify.com"><h3 class="text">For the Record</h3></a> 
+            </div>
+            <div class="footer">
+                <h3 class="footer-title">Communities</h3>
+                <a href="https://artists.spotify.com/home"><h3 class="text">For Artists</h3></a> 
+                <a href="https://developer.spotify.com"><h3 class="text">Developers</h3></a> 
+                <a href="https://ads.spotify.com/en-US/"><h3 class="text">Advertising</h3></a> 
+                <a href="https://investors.spotify.com/home/default.aspx"><h3 class="text">Investors</h3></a> 
+                <a href="https://spotifyforvendors.com"><h3 class="text">Vendors</h3></a> 
+            </div>
+            <div class="footer">
+                <h3 class="footer-title">Useful Links</h3>
+                <a href="https://support.spotify.com/sg-en/"><h3 class="text">Support</h3></a> 
+                <a href="https://www.spotify.com/sg-en/free/"><h3 class="text">free Mobile App</h3></a> 
+               
+            </div>
+            <div class="icons"> 
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-facebook-circle-fill"></i>
+            </div>
+        </div>
+        <br>
+       
+        <br>
+        <div style="color: #7a7a7a; padding-left: 20px;" >@ 2024 Spotify AB</div><br>
+        <br>
+        <!-- <div class="icons"> 
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-fill"></i>
+        </div>
+        -->
+
+    </footer>
+    </div>
+
+
+    <div class="preview">
+        <div class="text">
+            <h6>Preview of Spotify</h6>
+            <p>Sign up to get unlimited song and podcasts with occasional ads.No credit card needed.</p>
+        </div>
+        <div class="button">
+            <button type="button">Sign up free</button>
+        </div>
+    </div>
+   
+
+    <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+    <script>
+       
+        const playlists = [
+            { image: "/images/tu hai kahan.jfif", name: "Tu Hai Kahan", description: "zayn is on the top fo the hottest 40!" },
+            { image: "/images/rapcavier.jfif", name: "RapCavier", description: "new music of Cardi B is out!" },
+            { image: "/images/todays top hit.jfif", name: "Today's Top Hits!", description: "Teddy siwms on the top 40!" },
+            { image: "/images/Chillout Lounge.jfif", name: "Chillout Lounge", description: "This song is on the top 40!" },
+            { image: "/images/all out of 20s.jfif", name: "All Out 20s", description: "The biggest song of 20s" }
+            
+        ];
+        
+       
+        function createPlaylistItem(item) {
+            return `
+                <div class="item" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    <img src="${item.image}" alt="">
+                    <div class="play">
+                        <span class="fa fa-play"></span>
+                    </div>
+                    <h4>${item.name}</h4>
+                    <p>${item.description}</p>
+                </div>
+            `;
+        }
+        
+       
+        function handleMouseOver(item) {
+            item.style.backgroundColor = '#252525';
+            var playIcon = item.querySelector('.play .fa');
+            playIcon.style.opacity = '1';
+            playIcon.style.transform = 'translateY(-20px)';
+        }
+        
+        function handleMouseOut(item) {
+            item.style.backgroundColor = 'transparent';
+            var playIcon = item.querySelector('.play .fa');
+            playIcon.style.opacity = '0';
+            playIcon.style.transform = 'translateY(0)';
+        }
+        
+       
+        const playlistContainer = document.querySelector('.spotify-playlist .list');
+        playlistContainer.innerHTML = playlists.map(createPlaylistItem).join('');
+        </script>
+
+</body>
+</html>

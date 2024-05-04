@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'kanit',sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left:0 ;
+    top:0 ;
+    bottom: 0;
+    width: 300px;
+    background-color: #000000;
+    padding: 24px;
+}
+.separator{
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #303030;
+    margin-top: 16px;
+}
+
+.sidebar .logo img {
+    width: 150px;
+}
+
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sidebar .navigation ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover{
+    color: #ffffff;
+}
+
+.sidebar .policies{
+    position: absolute;
+    bottom: 100px;
+
+}
+
+.sidebar .policies ul{
+    list-style: none;
+}
+
+.sidebar .policies ul li{
+    padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.sidebar .policies ul li a:hover{
+    text-decoration: underline;
+}
+
+.main-container{
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 14px 30px;
+}
+
+.topbar .prev-next-button button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul{
+    list-style: none;
+}
+
+.topbar .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.topbar .navbar button:hover{
+    background-color: #f2f2f2;
+
+}
+
+.spotify-playlist{
+    padding: 20px 40px;
+    
+}
+
+.spotify-playlist h1{
+    color: #ffffff;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.spotify-playlist .list .item{
+    min-width: 170px;
+    width: 230px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover{
+    background-color: #252525;
+}
+
+.spotify-playlist .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+}
+
+.spotify-playlist .list .item .play{
+    position: relative;
+}
+
+.spotify-playlist .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.spotify-playlist .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.spotify-playlist .list h4{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spotify-playlist .list .item p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.spotify-playlist .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item .play {
+    position: relative;
+}
+
+.spotify-playlist .list .item .play .fa {
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.preview{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.preview h6{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.preview p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.preview button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+/* scrollbar styling */
+::-webkit-scrollbar{
+    width: 10px;
+    overflow: hidden;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(61, 60, 60);
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #b3b2b2;
+}
+/* FOOTER */
+.footer{
+    color: white;
+    margin-left: 38px;
+   
+}
+.footer-title{
+    padding: 4px;
+}
+.text{
+    color: rgb(148, 147, 147);
+    padding: 5px;
+    
+}
+.text a :hover {
+    text-decoration: none;
+    background-color: white;
+    color: white;
+}
+.ri-twitter-fill{
+    color: white;
+    font-size: 2rem;
+}
+.ri-instagram-line{
+    color: white;
+    font-size: 2rem;
+ 
+    
+}
+.ri-facebook-circle-fill{
+    color: white;
+    font-size: 2rem;
+}
+
+.main-footer{
+    display: flex;
+    padding: 20px;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.main-footer a{
+    text-decoration: none;
+}
+.main-footer a :hover{
+    color: rgb(224, 220, 220);  
+}
+.icons{
+    float: right;   
+}
+.icons  :hover{
+ background-color: #5c5858;
+ border-radius: 4px;
+}
+
+.showall-button a{
+    margin-left: 1205px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+.showall-button a:hover{
+    text-decoration: underline;
+    color: #f2f2f2b9;
+}
